@@ -6,7 +6,7 @@ import { myChain } from "@/server/contracts/message";
 
 // 导入 SendMessage 和 ReceiveMessage 组件
 import { SendMessage } from "@/components/message/sendMessage";
-import { ReceiveMessage } from "@/components/message/receiveMessage";
+import { ReceiveMessageJournal } from "@/components/message/receiveMessageJournal";
 import { Header } from "@/components/header";
 
 export default function Message() {
@@ -36,7 +36,7 @@ export default function Message() {
 
               {/* 接收消息组件 */}
               <div className="flex-1 min-w-[60%]">
-                <ReceiveMessage />
+                <ReceiveMessageJournal />
               </div>
             </div>
           )}
